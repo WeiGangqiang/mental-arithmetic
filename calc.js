@@ -17,7 +17,7 @@ aixbot.use(async (ctx, next) => {
 // define middleware for DB
 aixbot.use(async (ctx, next) => {
     ctx.words = [
-        "3加3等于几","3加6等于几","3加9等于多少","4+4等于啥","5+5呢","10-2等于几","12加12呢"
+        "3加3等于几","3加6等于几","3加9等于多少","4加4等于啥","5加5多少呢","10减2等于几","12加12多少呢"
     ]
     await next();
 });
@@ -43,7 +43,7 @@ aixbot.hears(/(下一个)|(换一个)|(写完了)|(换)|(再换)|(写好了)|(�
 
 aixbot.onEvent('noResponse', async (ctx) =>{
     // ctx.directiveAudio("http://xiaoda.ai/audios/audio?name=05").wait();
-    ctx.speak("你可以对我说下一个跳过这个问题").wait();
+    ctx.speak("你可以对我说下一个来跳过这个问题").wait();
 });
 
 // define regex handler
