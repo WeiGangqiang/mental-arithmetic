@@ -43,7 +43,7 @@ aixbot.hears(/(下一个)|(换一个)|(写完了)|(换)|(再换)|(写好了)|(�
 
 aixbot.onEvent('noResponse', async (ctx) =>{
     // ctx.directiveAudio("http://xiaoda.ai/audios/audio?name=05").wait();
-    ctx.speak("写完了对我说下一个").wait();
+    ctx.speak("你可以对我说下一个跳过这个问题").wait();
 });
 
 // define regex handler
