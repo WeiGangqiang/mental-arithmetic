@@ -69,5 +69,5 @@ aixbot.onError((err, ctx) => {
     ctx.reply('内部错误，稍后再试').closeSession();
 });
 
-logger.info("start run on 8090")
-aixbot.run(8090);
+logger.info("start run on 8091")
+aixbot.run(8091);
